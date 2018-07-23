@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "md5": "^2.2.1",
     "prop-types": "^15.6.2",
     "react": "16.4.1",
     "react-native": "0.56.0",
@@ -33,5 +34,10 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "rnpm": {
+    "assets": [
+      "./app/static/fonts"
+    ]
   }
 }

@@ -1,4 +1,4 @@
-import { StackNavigator } from 'react-navigation'
+import { createStackNavigator } from 'react-navigation'
 
 import Home from '../screens/home'
 import Options from '../screens/options'
@@ -9,7 +9,7 @@ const optionsGeneral = {
   headerMode: 'none'
 }
 
-const HomeStack = StackNavigator({
+const HomeStack = createStackNavigator({
   Home: {
     screen: Home,
     navigationOptions: {
@@ -30,7 +30,7 @@ const HomeStack = StackNavigator({
   }
 })
 
-export default StackNavigator(
+export default createStackNavigator(
   {
     Home: {
       screen: HomeStack

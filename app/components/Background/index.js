@@ -12,7 +12,6 @@ const BackgroundContainer = styled.Image`
 `
 const BackgroundView = styled.View`
   flex: 1;
-  justify-content: center;
   align-items: center;
   width: 100%;
 `

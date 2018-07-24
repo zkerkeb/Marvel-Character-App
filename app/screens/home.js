@@ -3,16 +3,23 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { Image } from 'react-native'
 
 import allTheActions from '../actions/index'
 import Background from '../components/Background'
-import ParameterIcon from '../static/Images/parameter.png'
+import MainMenu from '../components/MainMenu'
 
-import CharacterRow from '../components/CharacterRow'
-import CharactersList from '../components/CharactersList'
+import MarvelLogo from '../static/Images/MarvelLogo.png'
 
-const Parameter = styled.TouchableOpacity``
+const MarvelBanner = styled.Image`
+  height: 130;
+  width: 100%;
+`
+
+const MarvelbannerContainer = styled.TouchableOpacity`
+  margin: 40px 15px 40px 15px;
+  width: 100%;
+  box-shadow: 1px 1px 3px;
+`
 
 class Home extends React.PureComponent {
   static propTypes = {
@@ -29,17 +36,15 @@ class Home extends React.PureComponent {
     this.props.navigation.navigate('Options')
   }
 
-  _renderItem = ({ item }) => {
-    return <CharacterRow item={item} />
-  }
-
   render() {
     return (
       <Background>
-        <CharactersList />
-        <Parameter onPress={this.handleParameterPress}>
-          <Image source={ParameterIcon} />
-        </Parameter>
+        <MarvelbannerContainer
+          OnPress={() => console.log('link to the marvel website')}
+        >
+          <MarvelBanner source={MarvelLogo} resizeMode={'contain'} />
+        </MarvelbannerContainer>
+        <MainMenu />
       </Background>
     )
   }

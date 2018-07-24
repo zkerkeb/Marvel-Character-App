@@ -1,6 +1,7 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 import { Provider } from 'react-redux'
+import { StatusBar } from 'react-native'
 
 import StackNavigator from './app/config/routes'
 import { persistor, store } from './app/config/store'
@@ -18,6 +19,7 @@ export default class App extends React.Component {
       <ThemeProvider theme={theme}>
         <Provider store={store}>
           <PersistGate loading={<Text>Loading</Text>} persistor={persistor}>
+            <StatusBar barStyle="light-content" />
             <StackNavigator />
           </PersistGate>
         </Provider>

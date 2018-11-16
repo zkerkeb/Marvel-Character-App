@@ -7,6 +7,7 @@ import CharacterRow from '../CharacterRow'
 import List from '../List'
 import allTheActions from '../../actions'
 
+
 class CharactersList extends React.PureComponent {
   static propTypes = {
     actions: PropTypes.object,
@@ -23,7 +24,8 @@ class CharactersList extends React.PureComponent {
   _keyExtractor = item => `${item.id}`
 
   _renderItem = ({ item }) => {
-    return <CharacterRow item={item} />
+    const { navigation } = this.props
+    return <CharacterRow item={item} navigation={navigation} />
   }
 
   onEndReached = () => {

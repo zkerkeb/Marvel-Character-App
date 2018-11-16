@@ -5,6 +5,7 @@ export const theme = {
     pureWhite: '#FFFFFF',
     blue: '#7BA9CC',
     red: '#ed3833',
+    redDarker: '#CF2121',
     marvelRed: '#FF131E',
     yellow: '#CBCC7B',
     orange: '#FFA880',

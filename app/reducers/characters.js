@@ -1,7 +1,8 @@
-import { GET_CHARACTERS } from '../actions/characters'
+import { GET_CHARACTER, GET_CHARACTERS } from '../actions/characters'
 
 const initialState = {
   list: [],
+  characterDetails: {},
   offset: 0
 }
 
@@ -13,7 +14,11 @@ export default (state = initialState, action) => {
         list: [...state.list, ...action.payload.list],
         offset: action.payload.offset
       }
-
+    case GET_CHARACTER:
+      return {
+        ...state,
+        characterDetails: action.payload
+      }
     default:
       return state
   }

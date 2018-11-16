@@ -16,7 +16,7 @@ export default class App extends React.Component {
     // Do a function to purge every 24 or 48h
     // persistor.purge()
     return (
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme} accessibilityLabel="testview">
         <Provider store={store}>
           <PersistGate loading={<Text>Loading</Text>} persistor={persistor}>
             <StatusBar barStyle="light-content" />

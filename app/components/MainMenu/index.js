@@ -1,5 +1,5 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const MenuRow = styled.TouchableOpacity`
@@ -21,10 +21,18 @@ const MenuTitle = styled.Text`
 `
 
 export default class MainMenu extends React.Component {
+  static propTypes = {
+    navigation: PropTypes.object
+  }
+
+  handleMenuPress = location => {
+    this.props.navigation.navigate(location)
+  }
+
   render() {
     return (
       <React.Fragment>
-        <MenuRow onPress={() => console.log('add route here')}>
+        <MenuRow onPress={() => this.handleMenuPress('Entities')}>
           <MenuTitle> ENTITIES</MenuTitle>
         </MenuRow>
         <MenuRow onPress={() => console.log('add route here')}>

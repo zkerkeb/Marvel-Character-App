@@ -38,6 +38,7 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		2805421A450E474FA4FC0DFE /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E563C98B2155488EAF5DC18F /* Gotham-Light.otf */; };
+		DBD36A2FAF8440FC880FAAE6 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5C05432D37BB4AFB907D00B0 /* Gotham-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -344,6 +345,7 @@
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		E563C98B2155488EAF5DC18F /* Gotham-Light.otf */ = {isa = PBXFileReference; name = "Gotham-Light.otf"; path = "../app/static/fonts/Gotham-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5C05432D37BB4AFB907D00B0 /* Gotham-Bold.otf */ = {isa = PBXFileReference; name = "Gotham-Bold.otf"; path = "../app/static/fonts/Gotham-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -610,6 +612,7 @@
 			isa = "PBXGroup";
 			children = (
 				E563C98B2155488EAF5DC18F /* Gotham-Light.otf */,
+				5C05432D37BB4AFB907D00B0 /* Gotham-Bold.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1062,6 +1065,7 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				2805421A450E474FA4FC0DFE /* Gotham-Light.otf in Resources */,
+				DBD36A2FAF8440FC880FAAE6 /* Gotham-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
